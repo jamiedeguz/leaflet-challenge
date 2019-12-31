@@ -7,15 +7,15 @@ function markerSize(mag) {
 }
 
 function markerColor(mag) {
-  if (mag <= 0.5) {
+  if (mag <= 1) {
       return "cyan";
-  } else if (mag <= 1) {
-      return "blue";
   } else if (mag <= 2) {
-      return "mediumseagreen";
+      return "blue";
   } else if (mag <= 3) {
-      return "yellow";
+      return "mediumseagreen";
   } else if (mag <= 4) {
+      return "yellow";
+  } else if (mag <= 5) {
       return "orange";
   } else {
       return "red";
